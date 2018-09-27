@@ -48,52 +48,180 @@ table {
 }
 
 body{
-    background-color: #f1foee;
+    background-color:  floralwhite;
 }
 
 p {
     margin: 10px 35px 10px 35px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 18px; 
+    font-size: 20px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
-    line-height: 22px;
+    line-height: 25px;
+}
+
+div {
+    padding: 30px 30px 30px 30px;
+}
+
+img {
+    vertical-align: middle;
+    
+}
+
+.pageheader {
+    padding: 0 0 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.imageheader {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #b11a21;
+}
+
+.pageheader:hover .overlay {
+    opacity: .75;
+}
+
+.textheader {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .bluebox {
     margin: 25px 400px 25px 15px;
-    padding: 25px 25px 25px 25px;
+    padding: 0px 0px 0px 0px;
+    width: 60%;
     background-color: #7acfd6;
- }
+}
 
 .redbox {
     margin: 25px 15px 25px 400px;
     padding: 25px 25px 25px 25px;
+    width: 60%;
     background-color: #b11a21;
- }
+}
 
-.white {
-    margin: 25px 50px 25px 50px;
+.hovercontainer {
+    margin: 0 0 0 0; 
+    padding: 0 0 0 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+
+.hovertext {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hoveroverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: ;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: inherit;
+    align-content: center;
+}
+
+.hovercontainer:hover .hoveroverlay {
+    opacity: 0;
+}
+
+.hoveroverlaytext {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 18px; 
-    font-style: normal; 
-    font-variant: normal; 
-    font-weight: 400; 
-    line-height: 22px;
     color: white;
+    font-size: 50px;
+    line-height: 65px;
+    position: relative;
+    text-align: center;
+}
+
+.pagefooter {
+    padding: 0 0 0 0;
+    width: 100%;
+    position: relative;
+}
+
+.imagefooter {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.overlayfooter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #b11a21;
+}
+
+.pagefooter:hover .overlay {
+    opacity: .75;
+}
+
+.textfooter {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 h1 {
-    margin: 50px 75px 25px 75px; 
+    margin: 25px 25px 25px 25px; 
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 34px; 
+    font-size: 40px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    line-height: 36px;
-    color: white; 
-} 
+    line-height: 46px;
+    color: white;
+    text-align: center;
+}
+
 h2 {
     margin: 25px 50px 25px 50px;  
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
@@ -102,7 +230,6 @@ h2 {
     font-variant: normal; 
     font-weight: bold; 
     line-height: 36px;
-    color: white; 
 }  
 h3 { 
     margin: 50px 75px 25px 75px; 
@@ -122,39 +249,53 @@ h4 {
     font-weight: bold; 
     line-height: 22px; 
 }  
-h5 { 
-    margin: 50px 75px 25px 75px; 
+h5 {
+    margin: 25px 25px 25px 25px; 
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    font-size: 20px; 
+    display: inline;
+    font-size: 30px; 
     font-style: normal; 
-    font-variant: normal; 
-    font-weight: normal; 
-    line-height: 22px; 
+    font-variant: normal;           
+    font-weight: bold; 
+    line-height: 36px; 
+    
 }   
 h6 { 
-    margin: 5px 5px 5px 5px; 
+    margin: 5px 5px 5px 25px; 
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    display: inline;
     font-size: 18px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: bold; 
-    line-height: 20px; 
+    line-height: 20px;
+    text-align: left; 
 } 
 blockquote { 
-    margin: 50px 75px 25px 75px; 
+    margin: 25px 50px 25px 25px; 
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
     font-size: 21px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
     line-height: 30px; 
+    color: white;
 } 
 pre { font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
     font-size: 13px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
-    line-height: 18px; 
+    line-height: 15px; 
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 30px 0 10px 100px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 18px;
+    line-height: 22px;
 }
 
 table {
@@ -166,7 +307,15 @@ table {
     table-layout: auto;
     padding: 10px 10px 10px 10px;
 }
-  
+ 
+.smallTable {
+    max-width: 500;
+    margin: 40px 150px 30px 50px; 
+    padding: 5px 5px 5px 5px;
+    line-height: 25px;
+    font-size: 16px
+}
+
 thead {
     background: #7acfd6;
     color: #ffffff;
@@ -175,7 +324,7 @@ thead {
 }
   
 td:first-child {
-    padding: 20px 15px 5px 20px;
+    padding: 5px 5px 5px 5px;
     text-align: left;
     font-weight: bold;
 }
@@ -204,17 +353,28 @@ tbody tr:last-child td {
   }
 
   .col-I {
-      width: 31%
+      width: 28%;
   }
 
   .col-II {
-      width: 23%
+      width: 3%;
+      text-align: left;
   }
 
   .col-III {
-      width: 23%
+      width: 23%;
   }
 
   .col-IV {
-      width: 23%
+      width: 23%;
+  }
+
+  .col-V {
+      width: 23%;
+  }
+  
+  footer {
+      padding: 50px 25px 25px 50px;
+      border-top: 2px solid #ddd;
+
   }
