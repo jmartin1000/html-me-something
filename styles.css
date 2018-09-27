@@ -72,7 +72,7 @@ img {
 
 .pageheader {
     padding: 0 0 0 0;
-    width: 100%;
+    width: 1200;
     position: relative;
 }
 
@@ -89,7 +89,7 @@ img {
     left: 0;
     right: 0;
     height: auto;
-    width: 100%;
+    width: 1200;
     opacity: 0;
     transition: .5s ease;
     background-color: #b11a21;
@@ -102,10 +102,10 @@ img {
 .textheader {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
     color: white;
-    font-size: 70px;
+    font-size: 65px;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 75%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -113,15 +113,15 @@ img {
 }
 
 .bluebox {
-    margin: 25px 400px 25px 15px;
+    margin: 25px 400px 25px 0px;
     padding: 0px 0px 0px 0px;
     width: 60%;
     background-color: #7acfd6;
 }
 
 .redbox {
-    margin: 25px 15px 25px 400px;
-    padding: 25px 25px 25px 25px;
+    margin: 25px 0px 25px 40%;
+    padding: 0px 0px 0px 0px;
     width: 60%;
     background-color: #b11a21;
 }
@@ -303,9 +303,10 @@ table {
     text-align: left;
     line-height: 40px;
     max-width: 1200px;
-    margin: 50px 50px 50px 50px;
-    table-layout: auto;
+    margin: 50px 100px 50px 100px;
     padding: 10px 10px 10px 10px;
+    table-layout: auto;
+    background-color: white;
 }
  
 .smallTable {
@@ -313,7 +314,7 @@ table {
     margin: 40px 150px 30px 50px; 
     padding: 5px 5px 5px 5px;
     line-height: 25px;
-    font-size: 16px
+    font-size: 16px;
 }
 
 thead {
@@ -376,5 +377,12 @@ tbody tr:last-child td {
   footer {
       padding: 50px 25px 25px 50px;
       border-top: 2px solid #ddd;
+      max-width: 1200;
 
+  }
+
+  .footer {
+      display: inline;
+      text-align: right;
+      padding-left: 50%;
   }
