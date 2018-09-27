@@ -303,7 +303,7 @@ table {
     text-align: left;
     line-height: 40px;
     max-width: 1200px;
-    margin: 50px 100px 50px 100px;
+    margin: 50px 75px 50px 75px;
     padding: 10px 10px 10px 10px;
     table-layout: auto;
     background-color: white;
@@ -375,9 +375,11 @@ tbody tr:last-child td {
   }
   
   footer {
-      padding: 50px 25px 25px 50px;
-      border-top: 2px solid #ddd;
+      padding: 25px 25px 25px 50px;
+      border-top: 1px solid #ddd;
+      background-color: burlywood;
       max-width: 1200;
+      color: white;
 
   }
 
