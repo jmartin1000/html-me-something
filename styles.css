@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+/* begin styling */
+
+/* main block styling */
+
 body{
     background-color:  floralwhite;
 }
@@ -66,150 +70,18 @@ div {
 }
 
 img {
-    vertical-align: middle;
-    
+    vertical-align: middle;   
 }
-
-.pageheader {
-    padding: 0 0 0 0;
-    width: 1200;
-    position: relative;
-}
-
-.imageheader {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 1200;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #b11a21;
-}
-
-.pageheader:hover .overlay {
-    opacity: .75;
-}
-
-.textheader {
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+  
+footer {
+    padding: 25px 25px 25px 50px;
+    border-top: 1px solid #ddd;
+    background-color: #aaa;
+    max-width: 1200;
     color: white;
-    font-size: 65px;
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
-.bluebox {
-    margin: 25px 400px 25px 0px;
-    padding: 0px 0px 0px 0px;
-    width: 60%;
-    background-color: #7acfd6;
-}
-
-.redbox {
-    margin: 25px 0px 25px 40%;
-    padding: 0px 0px 0px 0px;
-    width: 60%;
-    background-color: #b11a21;
-}
-
-.hovercontainer {
-    margin: 0 0 0 0; 
-    padding: 0 0 0 0;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-}
-
-.hovertext {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hoveroverlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: ;
-    opacity: 1;
-    transition: .5s ease;
-    background-color: inherit;
-    align-content: center;
-}
-
-.hovercontainer:hover .hoveroverlay {
-    opacity: 0;
-}
-
-.hoveroverlaytext {
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    color: white;
-    font-size: 50px;
-    line-height: 65px;
-    position: relative;
-    text-align: center;
-}
-
-.pagefooter {
-    padding: 0 0 0 0;
-    width: 100%;
-    position: relative;
-}
-
-.imagefooter {
-    display: block;
-    width: 50%;
-    height: auto;
-}
-
-.overlayfooter {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #b11a21;
-}
-
-.pagefooter:hover .overlay {
-    opacity: .75;
-}
-
-.textfooter {
-    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
-    color: white;
-    font-size: 70px;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
+/* styling for h1 - h6*/
 h1 {
     margin: 25px 25px 25px 25px; 
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
@@ -289,6 +161,8 @@ pre { font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, A
     line-height: 15px; 
 }
 
+/* styling for lists */
+
 ul {
     list-style-type: disc;
     list-style-position: outside;
@@ -298,12 +172,17 @@ ul {
     line-height: 22px;
 }
 
+/* styling for tables */
+
 table {
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     text-align: left;
     line-height: 40px;
-    max-width: 1200px;
+    width: 75%;
+    /*
     margin: 50px 75px 50px 75px;
+    */
+    margin: auto;
     padding: 10px 10px 10px 10px;
     table-layout: auto;
     background-color: white;
@@ -373,18 +252,117 @@ tbody tr:last-child td {
   .col-V {
       width: 23%;
   }
+
+  /* classes for divs */
   
-  footer {
-      padding: 25px 25px 25px 50px;
-      border-top: 1px solid #ddd;
-      background-color: burlywood;
-      max-width: 1200;
-      color: white;
-
+  .bluebox {
+      margin: 25px 400px 25px 0px;
+      padding: 0px 0px 0px 0px;
+      width: 60%;
+      background-color: #7acfd6;
   }
-
+  
+  .redbox {
+      margin: 25px 0px 25px 40%;
+      padding: 0px 0px 0px 0px;
+      width: 60%;
+      background-color: #b11a21;
+  }
+  
+  /* classes for text */
+  
   .footer {
       display: inline;
       text-align: right;
       padding-left: 50%;
+  }
+  
+  /* classes for hover effect on page header image */
+  
+  .pageheader {
+      padding: 0 0 0 0;
+      width: 100%;
+      position: relative;
+  }
+  
+  .imageheader {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  
+  .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: auto;
+      width: 1200;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #b11a21;
+  }
+  
+  .pageheader:hover .overlay {
+      opacity: .75;
+  }
+  
+  .textheader {
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+      color: white;
+      font-size: 65px;
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  
+  /* classes for hover effect on misc divs */
+  
+  .hovercontainer {
+      margin: 0 0 0 0; 
+      padding: 0 0 0 0;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background-color: inherit;
+  }
+  
+  .hovertext {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  
+  .hoveroverlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: auto;
+      width: ;
+      opacity: 1;
+      transition: .5s ease;
+      background-color: inherit;
+      align-content: center;
+  }
+  
+  .hovercontainer:hover .hoveroverlay {
+      opacity: 0;
+  }
+  
+  .hoveroverlaytext {
+      padding: auto;
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+      color: white;
+      font-size: 50px;
+      line-height: 65px;
+      position: relative;
+      text-align: center;
+      vertical-align: center;
   }
