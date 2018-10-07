@@ -268,6 +268,23 @@ tbody tr:last-child td {
       width: 60%;
       background-color: #b11a21;
   }
+
+  .double-container {
+      width: 100%;
+      height: auto;
+      padding: 0 100px;
+  }
+
+  iframe {
+      position: relative;
+      display: inline-block;
+  }
+
+  .spacer {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+  }
   
   /* classes for text */
   
