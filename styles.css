@@ -271,19 +271,16 @@ tbody tr:last-child td {
 
   .double-container {
       width: 100%;
-      height: auto;
-      padding: 0 100px;
+      max-height: 355px;
+      overflow: hidden;
+      padding: 0 auto;
+      text-align: center;
   }
 
-  iframe {
+  .iframe {
       position: relative;
       display: inline-block;
-  }
-
-  .spacer {
-      position: relative;
-      display: inline-block;
-      width: 200px;
+      margin: 0 100px;
   }
   
   /* classes for text */
